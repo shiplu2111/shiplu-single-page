@@ -105,7 +105,13 @@ const Projects = () => {
               </Card>
             ))}
           </div>
-
+            {!hasMore && (
+           <p className="text-center text-muted-foreground mt-12 text-lg font-semibold animate-fade-in animate-bounce-slow">
+                    
+            <span className="flex items-center justify-center gap-4">More projects coming soon! <Loader2 className="animate-spin" /></span>
+          </p>
+            
+            )}
           {hasMore && (
             <div className="flex justify-center mt-12">
               <Button
