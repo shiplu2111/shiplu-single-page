@@ -1,58 +1,12 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { GraduationCap, Award } from "lucide-react";
 import { useScrollAnimation, useMultiScrollAnimation } from "@/hooks/use-scroll-animation";
+import { education ,trainings} from "@/data/education";
 
 const Education = () => {
   const { ref, isVisible } = useScrollAnimation();
   const educationItems = useMultiScrollAnimation(6);
 
-  const education = [
-    {
-      icon: GraduationCap,
-      degree: "Bachelor of Computer Science",
-      institution: "University Name",
-      period: "2018 - 2022",
-      description: "Focused on software engineering and web development"
-    },
-    {
-      icon: GraduationCap,
-      degree: "High School Diploma",
-      institution: "School Name",
-      period: "2014 - 2018",
-      description: "Science and Mathematics specialization"
-    }
-  ];
-
-  const trainings = [
-    {
-      icon: Award,
-      title: "Full Stack Web Development",
-      provider: "Training Provider",
-      period: "2023",
-      description: "Comprehensive training in MERN stack development"
-    },
-    {
-      icon: Award,
-      title: "UI/UX Design Fundamentals",
-      provider: "Training Provider",
-      period: "2022",
-      description: "User interface and experience design principles"
-    },
-    {
-      icon: Award,
-      title: "React Advanced Patterns",
-      provider: "Training Provider",
-      period: "2023",
-      description: "Advanced React concepts and design patterns"
-    },
-    {
-      icon: Award,
-      title: "Cloud Computing Essentials",
-      provider: "Training Provider",
-      period: "2024",
-      description: "AWS and cloud infrastructure fundamentals"
-    }
-  ];
+ 
 
   return (
     <section id="education" className="py-20 px-4 bg-muted/30">
@@ -74,7 +28,7 @@ const Education = () => {
         {/* Education */}
         <div className="mb-16">
           <h3 className="text-2xl font-bold mb-8 text-center">Education</h3>
-          <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-6 max-w-6xl lg:max-w-5xl mx-auto">
             {education.map((edu, index) => {
               const Icon = edu.icon;
               return (
@@ -87,7 +41,7 @@ const Education = () => {
                       : "opacity-0 translate-y-10"
                   }`}
                 >
-                  <Card className="h-full hover:shadow-lg transition-shadow">
+                  <Card className="h-full  hover:shadow-lg transition-shadow">
                     <CardHeader>
                       <div className="flex items-start gap-4">
                         <div className="p-3 rounded-lg bg-primary/10">

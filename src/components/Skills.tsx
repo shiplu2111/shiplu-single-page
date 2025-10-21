@@ -1,19 +1,10 @@
 import { useScrollAnimation, useMultiScrollAnimation } from "@/hooks/use-scroll-animation";
-
+import { skills } from "@/data/skills";
 const Skills = () => {
   const { ref, isVisible } = useScrollAnimation();
   const skillItems = useMultiScrollAnimation(8);
   
-  const skills = [
-    { name: "React", level: 90 },
-    { name: "TypeScript", level: 85 },
-    { name: "JavaScript", level: 95 },
-    { name: "Tailwind CSS", level: 90 },
-    { name: "HTML/CSS", level: 95 },
-    { name: "Next.js", level: 80 },
-    { name: "Git", level: 85 },
-    { name: "Responsive Design", level: 90 },
-  ];
+ 
 
   return (
     <section id="skills" className="py-20 md:py-32" ref={ref}>

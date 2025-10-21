@@ -30,9 +30,7 @@ const About = () => {
             About <span className="gradient-text">Me</span>
           </h2>
           <p className={`text-lg text-muted-foreground text-center mb-16 transition-all duration-700 delay-100 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            I'm a passionate frontend developer with expertise in building modern web applications.
-            With a keen eye for design and a love for clean code, I create digital experiences
-            that are both beautiful and functional.
+            Dedicated and results-driven Full-stack Developer with expertise in Laravel and React, specializing in building responsive, scalable, and user-focused web applications. Proficient in modern frontend and backend technologies, API development/integration, and performance optimization. Skilled at creating secure, maintainable, and high-quality solutions with a strong commitment to continuous learning and innovation. Seeking to contribute technical expertise and creativity to a forward-thinking organization, driving impactful digital experiences and business growth.
           </p>
 
           <div className="grid md:grid-cols-3 gap-8">

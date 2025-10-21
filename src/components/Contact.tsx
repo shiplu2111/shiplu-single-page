@@ -1,36 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, Twitter } from "lucide-react";
 import { useScrollAnimation, useMultiScrollAnimation } from "@/hooks/use-scroll-animation";
-
+import { socials } from "@/data/contact";
 const Contact = () => {
   const { ref, isVisible } = useScrollAnimation();
   const socialButtons = useMultiScrollAnimation(4);
-  const socials = [
-    {
-      name: "Email",
-      icon: Mail,
-      href: "mailto:your.email@example.com",
-      color: "hover:text-primary",
-    },
-    {
-      name: "GitHub",
-      icon: Github,
-      href: "https://github.com/yourusername",
-      color: "hover:text-primary",
-    },
-    {
-      name: "LinkedIn",
-      icon: Linkedin,
-      href: "https://linkedin.com/in/yourusername",
-      color: "hover:text-primary",
-    },
-    {
-      name: "Twitter",
-      icon: Twitter,
-      href: "https://twitter.com/yourusername",
-      color: "hover:text-primary",
-    },
-  ];
+  
 
   return (
     <section id="contact" className="py-20 md:py-32" ref={ref}>
@@ -69,7 +44,7 @@ const Contact = () => {
 
           <div className="pt-8 border-t border-border">
             <p className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} Your Name. Built with React & Tailwind CSS.
+              © {new Date().getFullYear()} Shiplu. Built with React & Tailwind CSS.
             </p>
           </div>
         </div>
