@@ -80,11 +80,27 @@ export const projects = [
         tags: ["React", "Next.js", "Tailwind CSS", "Figma to React"],
         image: "https://res.cloudinary.com/dy2eux3g0/image/upload/v1761041001/Screenshot_2025-10-21_160310_sbmakg.png",
         github: "https://github.com/shiplu2111/dashboard",
-        live: " https://cts-shiplujs.vercel.app/",
+        live: "https://cts-shiplujs.vercel.app/",
         login: {
             email: "any",
             password: "any",
         },
     },
+    {
+        title: "Doctorrx Prescription Management ",
+        description: "A prescription management application built with Laravel, Livewire, FilamentPhp, and Tailwind CSS, providing a user-friendly interface for managing patient prescriptions.",
+        tags: ["Laravel", "Tailwind CSS", "Livewire", "FilamentPhp"],
+        image: "https://res.cloudinary.com/dy2eux3g0/image/upload/v1761119825/Screenshot_2025-10-22_135652_vimvd6.png",
+        github: "https://github.com/shiplu2111/prescription-management-system",
+        live: "https://doctorrx.net/",
+    },
 
+    {
+        title: "Saifan E-commerce Website",
+        description: "A full-featured e-commerce website built with WordPress, WooCommerce and a custom theme, providing a seamless shopping experience with product listings, shopping cart, and secure checkout with multiple payment options.",
+        tags: ["WordPress", "WooCommerce", "Custom Theme", "Payment Gateway"],
+        image: "https://res.cloudinary.com/dy2eux3g0/image/upload/v1761120276/Screenshot_2025-10-22_140428_yr5w1b.png",
+        github: "#",
+        live: "https://saifan.cz/",
+    },
 ];

@@ -120,7 +120,7 @@ const Projects = () => {
                 onClick={() => {
                   setIsLoading(true);
                   setTimeout(() => {
-                    setVisibleCount(prev => prev + 4);
+                    setVisibleCount(prev => prev + 6);
                     setIsLoading(false);
                   }, 800);
                 }}
